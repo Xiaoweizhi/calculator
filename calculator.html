@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=640px, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>计算器</title>
+<link type="text/css" rel="stylesheet" href="js/calculator/R.calculator.css" />
+<script src="http://apps.bdimg.com/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
+<script src="js/calculator/R.calculator.js" type="text/javascript"></script>
+</head>
+<body> 
+	<div class="rcalculator_out">
+			<div class="rcalculator">
+				<div class="rcalculator_displayer">
+					<div class="rcalculator_displayer_in">
+						<input type="text" disabled="disabled"  class="rcalculator_displayer_input" value="0"/>
+					</div>
+				</div>
+				<div class="rcalculator_keyboard">
+					<ul>
+						<li>
+							<a href="javascript:void(0)" class="gray rdel"  data-option='C'>←</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="gray rdelall"  data-option='CE'>CE</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="gray rsignchange"  data-option='+/-'>+/-</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="gray roperation"  data-option='/'>÷</a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="javascript:void(0)" class="rnum" data-option='7'>7</a>				
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="rnum"  data-option='8'>8</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="rnum"  data-option='9'>9</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="gray roperation"  data-option='*'>x</a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="javascript:void(0)" class="rnum"  data-option='4'>4</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="rnum"  data-option='5'>5</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="rnum"  data-option='6'>6</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="gray roperation"  data-option='-'>-</a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="javascript:void(0)" class="rnum"  data-option='1'>1</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="rnum"  data-option='2'>2</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="rnum"  data-option='3'>3</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="gray roperation" data-option='+'>+</a>
+						</li>
+					</ul>
+					<ul>
+						<li class="li_B50">
+							<a href="javascript:void(0)" class="rnum"  data-option='0'>0</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="rnum"  data-option='.'>.</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="orange roperation"  data-option='='>=</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+	</div>
+<script type="text/javascript">
+	$(function(){
+		$(".rcalculator").calculator();
+	});
+</script>
+</body>
+</html>

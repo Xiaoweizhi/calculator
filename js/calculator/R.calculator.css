@@ -1,0 +1,118 @@
+	*{-webkit-tap-highlight-color:rgba(255,0,0,0);padding:0;margin:0;outline:0;}
+	ul, li{list-style: none; }
+	html,body{height:100%;}
+	html{font-size:100px;}
+	html,body{overflow: hidden;min-width:320px;}
+	.rcalculator_out{height:100%;width:6.4rem;margin:0 auto;box-sizing:border-box;padding:0.2rem;
+	 display:-webkit-box;display:-moz-box;display:-ms-box;overflow:auto;
+	 -webkit-box-orient:vertical;-ms-box-orient:vertical;-moz-box-orient:vertical;
+	 -webkit-box-align:center;-moz-box-align:center;-ms-box-align:center;
+	 font-family:'微软雅黑';
+	}
+	.rcalculator{overflow:hidden;background:#E4E3E2;margin:0 auto;
+	 border:0.01rem solid #BBBBBB;
+	 border-radius:0.1rem;box-shadow:0 0.05rem 0.2rem #bbb;padding:0.5rem 0.25rem;padding-bottom:0.25rem;
+	 box-sizing:border-box;width:100%;
+	}
+	.rcalculator_displayer{
+	 margin: 0 0 0.5rem;
+	 padding:0.10rem;
+	 border-radius: 0.1rem;
+	 box-shadow:0px 0.1rem 0.2rem #97948E inset,0px -0.1rem 0.2rem #fff inset,0.1rem 0px 0.2rem #D0CFCB inset,-0.1rem 0px 0.2rem #D0CFCB inset;
+	}
+	.rcalculator_displayer_in{
+	  padding:0.08rem;
+	  background:#35302A;
+	  border-radius: 0.1rem;
+	  -webkit-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.08);
+	  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.08);
+	 }
+	.rcalculator_displayer_in .rcalculator_displayer_input{
+	  display: block;
+	  width: 100%;
+	  height: 0.9rem;
+	  padding:0.1rem 0.2rem;
+	  font: 0.5rem/0.9rem UbuntuMono, monospace;
+	  color: #444;
+	  text-align: right;
+	  background: #bccd95;
+	  background-clip: padding-box;
+	  /* Don't let the background bleed outside the border */
+	  border: 1px solid #35302A;
+	  border-radius:2px;
+	  background-image: -webkit-linear-gradient(top, #CDCEB4, #C9C9B0);
+	  background-image: -moz-linear-gradient(top, #CDCEB4, #C9C9B0);
+	  background-image: -o-linear-gradient(top, #CDCEB4, #C9C9B0);
+	  background-image: linear-gradient(to bottom, #CDCEB4, #C9C9B0);
+	  -webkit-box-shadow: inset 0 0.08rem 0.1rem rgba(0, 0, 0, 0.5), 0 0 0 0.04rem rgba(255, 255, 255, 0.12);
+	  box-shadow: inset 0 0.08rem 0.1rem rgba(0, 0, 0, 0.5), 0 0 0 0.02rem rgba(255, 255, 255, 0.12);
+	  box-sizing:border-box;
+	}
+	.rcalculator_keyboard{}
+	.rcalculator_keyboard ul{overflow:hidden;padding-bottom:0.20rem;padding-top:0.1rem;}
+	.rcalculator_keyboard ul li{width:25%;float:left;}
+	.rcalculator_keyboard ul li.li_B50{width:50%;}
+	.rcalculator_keyboard ul li.li_B50 a{width:2.58rem;}
+	.rcalculator_keyboard ul li a{
+	 font-family:Arial;
+	  display:block;
+	  margin:0 auto;
+	  background-image: -webkit-linear-gradient(top, #FBFAF8, #F0EFEC);
+	  background-image: -moz-linear-gradient(top, #FBFAF8, #F0EFEC);
+	  background-image: -o-linear-gradient(top, #FBFAF8, #F0EFEC);
+	  background-image: linear-gradient(to bottom, #FBFAF8, #F0EFEC);
+	  box-shadow:0px 0.03rem 0.05rem #999,0 0.03rem 0 rgba(255,255,255,0.2) inset,0 -0.08rem 0 rgba(0,0,0,0.2) inset;
+	  border:0.018rem solid #666;
+	  border-radius:0.1rem;
+	  text-align:center;
+	  text-decoration:none;
+	  color:#5A5653;
+	  font-size:0.3rem;
+	  text-shadow: 0px -0.01rem 0 rgba(0,0,0,0.5);
+	  height:1rem;line-height:1rem;
+	  width:1.2rem;
+	  overflow:hidden;
+	}
+	.rcalculator_keyboard ul li a:active{
+	  box-shadow:none;
+	  border-radius:0.1rem;
+	  border:0.018rem solid #C3C2C2;
+	  background-image: -webkit-linear-gradient(top, #e8e7e5, #efedea);
+	  background-image: -moz-linear-gradient(top, #e8e7e5, #efedea);
+	  background-image: -o-linear-gradient(top, #e8e7e5, #efedea);
+	  background-image: linear-gradient(to bottom, #e8e7e5, #efedea);
+	}
+	.rcalculator_keyboard ul li a.gray{
+	 font-size:0.38rem;
+	  color:#ffffff;
+	  background-image: -webkit-linear-gradient(top, #8f8f8f, #626262);
+	  background-image: -moz-linear-gradient(top, #8f8f8f, #626262);
+	  background-image: -o-linear-gradient(top, #8f8f8f, #626262);
+	  background-image: linear-gradient(to bottom, #8f8f8f, #626262);
+	}
+	.rcalculator_keyboard ul li a.gray:active{
+	  box-shadow:none;
+	  border-radius:0.1rem;
+	  border:0.018rem solid #8f8d89;
+	  background-image: -webkit-linear-gradient(top, #676767, #5d5d5d);
+	  background-image: -moz-linear-gradient(top, #676767, #5d5d5d);
+	  background-image: -o-linear-gradient(top, #676767, #5d5d5d);
+	  background-image: linear-gradient(to bottom, #676767, #5d5d5d);
+	}
+	.rcalculator_keyboard ul li a.orange{
+	  font-size:0.38rem;
+	  color:#ffffff;
+	  background-image: -webkit-linear-gradient(top, #ff9964, #f16d41);
+	  background-image: -moz-linear-gradient(top, #ff9964, #f16d41);
+	  background-image: -o-linear-gradient(top, #ff9964, #f16d41);
+	  background-image: linear-gradient(to bottom, #ff9964, #f16d41);
+	}
+	.rcalculator_keyboard ul li a.orange:active{
+	  box-shadow:none;
+	  border-radius:0.1rem;
+	  border:0.018rem solid #999;
+	  background-image: -webkit-linear-gradient(top, #e56e4e, #d86236);
+	  background-image: -moz-linear-gradient(top, #e56e4e, #d86236);
+	  background-image: -o-linear-gradient(top, #e56e4e, #d86236);
+	  background-image: linear-gradient(to bottom, #e56e4e, #d86236);
+	}
